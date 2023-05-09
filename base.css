@@ -84,7 +84,6 @@ header *{
     margin-inline: 0.1rem;
     padding: auto;
     font-weight: bold;
-    /* font-size: 1rem; */
     text-decoration:underline;
 }
 
@@ -142,7 +141,7 @@ footer *{
     padding: 2rem 0.5rem;
 } 
 .footer__description p{
-    font-size:x-large;
+    font-size:large;
 }
 .footer__nav{
     padding: 1rem 0.5rem;
@@ -237,6 +236,12 @@ footer *{
     height: 3rem;
     border-radius: 10px;
     background-color: #FF5733;
+}
+
+.main__content__text div a:hover{
+    font-size: 1.6rem;
+    width: 19rem;
+    height: 3.5rem;
 }
 
 .main__content__text div h1{
@@ -349,7 +354,6 @@ footer *{
     grid-template-rows: min-content min-content;
     grid-template-areas:"project__group      project__dele"
                         "project__movements  projects__expresions";
-    /* background-color: aqua; */
     padding: 0;
 } 
 
@@ -550,7 +554,6 @@ footer *{
 .about__carrer .about__carrer--title{
     display: flex;
     margin-inline: 15rem;
-    /* background-color: aquamarine; */
 }
 
 .about__carrer .about__carrer--images{
@@ -560,7 +563,7 @@ footer *{
 }
 
 .about__carrer .about__carrer--images div{
-    margin: 2rem;
+    margin: 1rem;
 }
 
 
@@ -583,7 +586,6 @@ footer *{
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* background-color: salmon; */
 }
 
 .contact h1{
@@ -594,16 +596,13 @@ footer *{
 
 .contact div{
     display: flex;
-    /* background-color:greenyellow; */
 }
 
 .contact div .contact__company{
-	/* margin: 1rem; */
 	margin-right: 3rem;
 	width: 20rem;
 	display: flex;
 	flex-direction: column;
-	/* background-color: aqua; */
 }
 
 .contact div .contact__company p{
@@ -621,13 +620,11 @@ form{
 	flex-direction: column;
 	padding-left: 8rem;
 	border-left: 2px solid gray;
-	/* background-color: hotpink; */
 }
 
 form label{
 	width: 30rem;
 	margin-bottom: 0.4rem;
-	/* background-color: crimson; */
 }
 
 form input{
@@ -666,21 +663,18 @@ form input[type="submit"]{
     margin: 1rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    /* background-color: crimson; */
 }
 
 .prices__title{
     text-align: center;
     font-size: 2.5rem;
     margin: 1rem;
-    /* background-color: aqua; */
 }
 
 .prices__descriptions{
     font-size: 1.5rem;
     width: 70%;
     margin: auto;
-    /* background-color: coral; */
 }
 
 .prices__dele{
@@ -689,7 +683,6 @@ form input[type="submit"]{
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /* background-color: coral; */
 }
 
 table.prices__dele{
@@ -717,10 +710,9 @@ table tr td a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 1rem;
-    /* background-color: yellow; */
 }
 
 .special div h1{
@@ -744,15 +736,12 @@ table tr td a{
     flex-wrap: wrap;
     align-items: center;
     padding: 1rem;
-    /* background-color: aquamarine; */
 }
 
 .course__special div{
-    width: 50rem;
+    width: 40rem;
     margin: 1rem;
     padding: 1rem;
-    
-    /* background-color: aqua; */
 }
 
 .course__special div div{
@@ -762,8 +751,6 @@ table tr td a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* background-color: coral; */
 }
 
 .course__special div div *{
@@ -779,7 +766,7 @@ table tr td a{
 }
 
 /********************************/
-/*   special_programs_es.html   */
+/*       contacts_es.html       */
 /*           - main -           */
 /********************************/
 .pesonalized,
@@ -788,15 +775,14 @@ table tr td a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 1rem;
-    /* background-color: yellow; */
 }
 
 .pesonalized div h1,
 .dele div h1{
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .dele__description{
@@ -817,27 +803,22 @@ table tr td a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1rem;
-    /* background-color: aquamarine; */
+    padding-inline: 1rem;
 }
 
 .course__personalized div,
 .course__dele div{
-    width: 50rem;
-    margin: 1rem;
-    padding: 1rem;
-    
-    /* background-color: aqua; */
+    width: 35rem;
+    padding-inline: 0.5rem;
 }
 
 .course__personalized div div,
 .course__dele div div{
-    padding: 1rem;
-    margin: 1rem;
-    width: 46rem;
+    padding: .1rem;
+    margin: 0.5rem;
+    width: 38rem;
     display: flex;
     align-items: center;
-    /* background-color: coral; */
 }
 
 .course__personalized div div *,
