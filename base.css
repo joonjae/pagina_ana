@@ -546,7 +546,6 @@ footer *{
 .about__descriptions--goal_text p,
 .about__descriptions--presentation_text p{
     width: auto;
-    background-color: #FF5733;
 }
 
 .about__descriptions div div{
