@@ -1007,14 +1007,13 @@ table tr td a{
         width: auto;
         overflow: hidden;
         margin-left:unset;
-        margin: 1rem 0 1rem 0;
+        margin: auto;
         border-radius: 20px;
     }
-    
     .main__image img{
         height:unset;
         width: 360px;
-        margin:unset;
+        margin:auto;
         margin-top: -200px;
         object-fit: cover;
     }
