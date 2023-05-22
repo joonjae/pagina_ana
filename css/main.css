@@ -1015,6 +1015,8 @@ table tr td a {
         -ms-flex-align: start;
             align-items: start;
     font-size: 0.9rem;
+    background-color: cadetblue;
+    padding: 1rem;
   }
   .footer__soccial div img {
     width: 1.5rem;
