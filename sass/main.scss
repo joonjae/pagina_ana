@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 /********************************/
 /*                              */
 /*            General           */
@@ -13,206 +15,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 .text_orange{
-    color: #FF5733;
+    color: $color-naranja;
 }
 
-/********************************/
-/*                              */
-/*            Header            */
-/*                              */
-/********************************/
-
-/* *************************** */
-/* style confing css of Header */
-/* *************************** */
-header {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-}
-
-header *{
-    display:flex;
-    align-self: center;
-    text-decoration: none; 
-    list-style-type: none;
-    color: black;
-}
-
-header nav div{
-    background-color: white;
-}
-.navbar{
-    --bs-navbar-padding-y: 0;
-    width: 100%;
-}
-.navbar-nav{
-    margin: auto;
-}
-.navbar-nav ul{
-    margin-top: 1.1rem;
-    margin-right: .8rem;
-}
-.nav-link{
-    font-size: 1.2rem;
-    margin: 0.5rem;
-}
-
-.navbar-btn {
-    background-color: #FF5733;
-    margin-left: auto;
-}
-.navbar-btn a{
-    color:white;
-    font-size: 1.4rem;
-}
-
-
-.header__logo{
-    padding: 0.5rem;
-}
-
-.header__logo a img{
-    width: 14rem;
-}
-
-.header__nav {
-    margin: auto;
-    padding: 0.5rem;
-}
-
-.header__nav ul{
-    padding: 0.5rem;
-}
-
-.header__nav ul li a{
-    padding: 0.5rem;
-    margin: 0.5rem;
-    font-size: 1.5rem;
-    transition: .3s;
-}
-
-.header__nav ul li a:hover{
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-
-.header__language{
-    padding: 0.5rem;
-}
-
-.header__language ul{
-    padding: 0.5rem;
-}
-
-.header__language ul li{
-    margin-inline: 0.1rem;
-    padding: auto;
-    font-weight: bold;
-    text-decoration:underline;
-}
-
-.header__language ul li a{
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration:underline;
-    transition: 0.3s;
-}
-
-
-.header__language ul li a:hover{
-    font-size: 1.15rem;
-}
-
-.header__button__start{
-    margin-right: 0.5rem;
-    padding: 0.5rem;
-}
-
-.header__button__start a{
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-size: 1.3rem;
-    color:white;
-    background-color: #FF5733;
-    transition: .3s;
-}
-.header__button__start a:hover{
-    font-size: 1.4rem;
-}
-
-/********************************/
-/*                              */
-/*            Footer            */
-/*                              */
-/********************************/
-
-/* *************************** */
-/* style confing css of Footer */
-/* *************************** */
-
-footer {
-    padding: 4rem 1rem;
-    background-color: black;
-}
-
-footer *{
-    text-decoration: none;
-    color: white;
-}
-
-.footer__description{
-    display:flex;
-    padding: 2rem 0.5rem;
-} 
-.footer__description p{
-    font-size:large;
-}
-.footer__nav{
-    padding: 1rem 0.5rem;
-}
-
-.footer__nav ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer__nav ul li{
-    display:flex;
-    text-decoration: none; 
-    font-size:2rem;
-    margin-right: 3rem;
-}
-
-.footer__last_line{
-    display:flex;
-    align-items: center;
-    padding-top: 5rem;
-    padding-inline: 0.5;
-}
-
-.footer__soccial{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.footer__soccial div{
-    display: flex;
-    align-items: center;
-    margin: 0.5rem;
-}
-.footer__soccial div div{
-    display: flex;
-    align-items: center;
-}
-.footer__soccial div img{
-    width: 2rem;
-    filter: invert(100%);
-}
+@import "_header.scss";
+@import "_footer.scss";
 
 /********************************/
 /*          index.html          */
@@ -220,76 +29,68 @@ footer *{
 /********************************/
 
 /* Hero section */
-
 .hero{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem;
+    .main__content__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        flex-grow: 1;
+        padding: 0.5rem;
+        width: 24rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            width: 38rem;
+            padding: 0.5;
+            *{
+                padding: 0.5rem;
+                margin: 0.3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.5rem;
+                width: 18rem;
+                height: 3rem;
+                border-radius: 10px;
+                background-color: #FF5733;
+                &:hover{
+                    font-size: 1.55rem;
+                    width: 18.1rem;
+                    height: 3.2rem;
+                }
+            }
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .main__image{
+        flex-grow: 0;
+        height: 800px;
+        overflow: hidden;
+        margin-left: auto;
+        border-radius: 20% 0% 0% 20%;
+        img{
+            height: 1200px;
+            width: 1000px;
+            margin: -360px 0px 0px -150px;
+            object-fit: cover;
+        } 
+    }
 }
 
-.main__content__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    flex-grow: 1;
-    padding: 0.5rem;
-    width: 24rem;
-}
 
-.main__content__text div{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 38rem;
-    padding: 0.5;
-}
-
-.main__content__text div *{
-    padding: 0.5rem;
-    margin: 0.3rem;
-}
-
-.main__content__text div p{
-    font-size: 2rem;
-}
-
-.main__content__text div a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    width: 18rem;
-    height: 3rem;
-    border-radius: 10px;
-    background-color: #FF5733;
-}
-
-.main__content__text div a:hover{
-    font-size: 1.55rem;
-    width: 18.1rem;
-    height: 3.2rem;
-}
-
-.main__content__text div h1{
-    font-size: 3.5rem;
-}
-
-.hero .main__image{
-    flex-grow: 0;
-    height: 800px;
-    overflow: hidden;
-    margin-left: auto;
-    border-radius: 20% 0% 0% 20%;
-}
-
-.main__image img{
-    height: 1200px;
-    width: 1000px;
-    margin: -360px 0px 0px -150px;
-    object-fit: cover;
-} 
 
 
 /*****************/
@@ -302,89 +103,78 @@ footer *{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    .logos__ref{
+        img{
+            height: 4rem;
+            margin-inline: 2rem;   
+        }
+    } 
 }
-
-.logos p{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.logos__ref img{
-    height: 4rem;
-    margin-inline: 2rem;   
-}
-
 
 /*******************/
 /* Project section */
 /*******************/
-
 .projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
+    .projects__presentation{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+        div{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            h2{
+                width: 85%;
+                font-size: xxx-large;
+                margin: 1rem;
+            }
+            p{
+                width: 85%;
+                font-size:x-large;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .projects__set{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:"project__group      project__dele"
+                            "project__movements  projects__expresions";
+        padding: 0;
+        div{
+            width: 85%;
+            margin: auto;
+            margin-bottom: 2rem;
+            *{
+                margin-bottom: 1rem;
+                font-size:x-large;
+                text-decoration: none;
+            }
+        }
+        .project__group img{
+            width: 100%;
+        }
+        .project__movements img{
+            width: 100%;
+        }
+        .project__dele img{
+            width: 100%;
+        }
+        .project__expresions img{
+            width: 100%;
+        }
+    } 
 }
-
-.projects__presentation{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0.5rem;
-}
-
-.projects__presentation div{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.projects__presentation div h2{
-    width: 85%;
-    font-size: xxx-large;
-    margin: 1rem;
-}
-
-.projects__presentation div p{
-    width: 85%;
-    font-size:x-large;
-    margin-bottom: 1rem;
-}
-
-.projects__set div{
-    width: 85%;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-.projects__set div *{
-    margin-bottom: 1rem;
-    font-size:x-large;
-    text-decoration: none;
-}
-
-.projects__set .project__group img{
-    width: 100%;
-}
-.projects__set .project__movements img{
-    width: 100%;
-}
-.projects__set .project__dele img{
-    width: 100%;
-}
-.projects__set .project__expresions img{
-    width: 100%;
-}
-
-.projects__set{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content;
-    grid-template-areas:"project__group      project__dele"
-                        "project__movements  projects__expresions";
-    padding: 0;
-} 
-
 
 /***********************/
 /* testimonies section */
@@ -397,90 +187,86 @@ footer *{
     border-top: solid;
     border-bottom: solid;
     border-color: gray;
+    .testimony__description{
+        .testimony__description-title{
+            font-size:larger;
+            padding: 0.5rem;
+        }
+        .testimony__description-text{
+            font-size:x-large; 
+            font-weight: bold;
+            padding: 0.5rem;
+        }
+    }
+    .testimony__bloques{
+        display: flex;
+        overflow-x: scroll;
+        .testimony__tiatula,
+        .testimony__ue_madrid{
+            display: flex;
+            margin: 1rem;
+        }
+        .testimony__tiatula--imagen,
+        .testimony__ue_madrid--imagen{
+            width: 24rem;
+            height: 22rem;
+            overflow: hidden;
+            position: relative;
+        }
+        .testimony__ue_madrid--picture{
+            height: 100%;
+        }
+        .testimony__tiatula--picture{
+            width: 22rem;
+        }
+        .testimony__tiatula--logo,
+        .testimony__ue_madrid--logo{
+            position:absolute;
+            bottom: 5px;
+            left: 5px;
+            height: 3rem;
+        }        
+        .testimony__tiatula--descriptions,
+        .testimony__ue_madrid--descriptions{
+            display: flex;
+            flex-direction: column;
+            width: 35rem;
+        }
+        
+        .testimony__tiatula--descriptions div,
+        .testimony__ue_madrid--descriptions div{
+            margin: 0.5rem;
+        }
+        
+        .testimony__ue_madrid--descriptions div div,
+        .testimony__tiatula--descriptions div div{
+            margin-top: 1rem;
+        }
+        .stars_tiatula img,
+        .stars_ue_madrid img{
+            height: 3rem;
+        }
+        
+        .testimony_divider{
+            height: 0.2rem;
+        }
+        
+        .testimony__tiatula--autor p,
+        .testimony__ue_madrid--autor p{
+            font-weight: bold;
+            margin-inline: 0.5rem;
+        }
+        
+        .testimony__tiatula--course p,
+        .testimony__ue_madrid--course p{
+            margin-inline: 0.5rem;
+        }
+    }
 }
 
-.testimony__description-title{
-    font-size:larger;
-    padding: 0.5rem;
-}
-.testimony__description-text{
-    font-size:x-large; 
-    font-weight: bold;
-    padding: 0.5rem;
-}
-
-.testimony__bloques{
-    display: flex;
-    overflow-x: scroll;
-}
-
-.testimony__tiatula,
-.testimony__ue_madrid{
-    display: flex;
-    margin: 1rem;
-}
-
-.testimony__tiatula--imagen,
-.testimony__ue_madrid--imagen{
-    width: 24rem;
-    height: 22rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.testimony__ue_madrid--picture{
-    height: 100%;
-}
-.testimony__tiatula--picture{
-    width: 22rem;
-}
-
-.testimony__tiatula--logo,
-.testimony__ue_madrid--logo{
-    position:absolute;
-    bottom: 5px;
-    left: 5px;
-    height: 3rem;
-}
-
-.testimony__tiatula--descriptions,
-.testimony__ue_madrid--descriptions{
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-}
-
-.testimony__tiatula--descriptions div,
-.testimony__ue_madrid--descriptions div{
-    margin: 0.5rem;
-}
-
-.testimony__ue_madrid--descriptions div div,
-.testimony__tiatula--descriptions div div{
-    margin-top: 1rem;
-}
-
-.stars_tiatula img,
-.stars_ue_madrid img{
-    height: 3rem;
-}
-
-.testimony_divider{
-    height: 0.2rem;
-}
-
-.testimony__tiatula--autor p,
-.testimony__ue_madrid--autor p{
-    font-weight: bold;
-    margin-inline: 0.5rem;
-}
-
-.testimony__tiatula--course p,
-.testimony__ue_madrid--course p{
-    margin-inline: 0.5rem;
-}
-
+/***************/
 /* CTA section */
+/***************/
 .cta{
     padding: 4rem;
     background-color: black;
@@ -489,34 +275,30 @@ footer *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.cta .cta__description{
-    font-size: 2rem;
-    margin: 2rem;
-}
-
-.cta__titulo{
-    text-align: center;
-}
-.cta__titulo *{
-    font-size: 6rem;
-}
-
-.button_start{
-    display: flex;
-    margin: 2rem;
-}
-
-.button_start a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    width: 22rem;
-    border-radius: 5px;
-    padding: 1rem;
-    background-color: #FF5733;
+    .cta__titulo{
+        text-align: center;
+        *{
+            font-size: 6rem;
+        }
+    }
+    .cta__description{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .button_start{
+        display: flex;
+        margin: 2rem;
+        a{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.5rem;
+            width: 22rem;
+            border-radius: 5px;
+            padding: 1rem;
+            background-color: #FF5733;
+        }
+    }
 }
 
 /********************************/
@@ -862,365 +644,5 @@ table tr td a{
     font-size: large;
 }
 
-
-
-/* **************************** */
-/* **************************** */
-/*        Responsive 425px      */
-/*            MOBILE            */
-/* **************************** */
-/* **************************** */
-
-@media screen and (max-width: 426px){
-
-    /********************************/
-    /*        - General -           */
-    /********************************/
-
-    /*   Responsive css of Header   */
-    header{
-        display: unset;
-        /* flex-direction: column; */
-    }
-    .header__logo a img{
-        width: 10rem;
-    } 
-
-    .header__nav {
-        margin: 0;
-        padding: 0;
-    }
-    .header__nav ul{
-        padding: 0rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header__nav ul li {
-        text-align: center;
-        margin: 0rem;
-        width: auto;
-        list-style-type: none;
-    }
-
-    .header__nav ul li a{
-        padding: 0.5rem;
-        margin: 0;
-        font-size: 1rem;
-    }
-    .header__nav ul li a:hover{
-        font-size: 1.1rem;
-    }
-
-    .header__language ul li a{
-        font-size: .8rem;
-    }
-    .header__language ul li a:hover{
-        font-size: .9rem;
-    }
-
-    .header__button__start a{
-        display: none;
-    }
-
-    /*   Responsive css of Footer   */
-    footer {
-        padding: 1rem 1rem;
-    }
-    
-    .footer__description{
-        text-align: center;
-        font-size: .9rem;
-    }
-    
-    .footer__nav{
-        display: none;
-    }
-    
-    .footer__last_line{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: min-content min-content;
-        grid-template-areas:"last_line__soccial"
-                            "last_line__copyright";
-        padding: 0;
-    }
-    
-    .footer__soccial{
-        grid-area: last_line__soccial;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items:start;
-        font-size: 0.9rem;
-    }
-    .footer__soccial div img{
-        width: 1.5rem;
-    }
-    .footer__copyright{
-        grid-area: last_line__copyright;
-        padding: 0.5rem;
-        font-size: 0.7rem;
-    }
-
-    /********************************/
-    /*          index.html          */
-    /*           - main -           */
-    /********************************/
-
-    /*Responsive css of hero section*/
-    .hero{
-        padding: 0.2rem;
-        border-top: 1px dashed gray;
-    }
-    .main__content__text{
-        width: auto;
-        padding: 0.1rem;
-    }
-    
-    .main__content__text div{
-        width: auto;
-    }
-    
-    .main__content__text div h1{
-        width: auto;
-        font-size: 1.4rem;
-        text-align:center;
-        padding: 0;
-    }
-    .main__content__text div p{
-        padding: 0;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    .main__content__text div a{
-        margin:1rem;
-        align-self: center;
-        font-size: 1.3rem;
-        width: auto;
-        padding: auto;
-    }
-    
-    .hero .main__image{
-        flex-grow:unset;
-        height: 220px;
-        width: auto;
-        overflow: hidden;
-        margin-left:unset;
-        margin: auto;
-        border-radius: 20px;
-    }
-    .main__image img{
-        height:unset;
-        width: 360px;
-        margin:auto;
-        margin-top: -200px;
-        object-fit: cover;
-    }
-    
-    /*Responsive css of logo section*/
-    .logos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0.2rem;
-    }
-    
-    .logos p{
-        font-size: 1.2rem;
-        text-align: center;
-        font-weight: bold;
-        padding-inline: 1rem;
-    }
-    
-    .logos__ref{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .logos__ref img{
-        height:unset;
-        width: 6rem;
-        margin: 0.3rem;   
-    }
-    
-    /*Responsive css of project section*/
-    .projects{
-        margin: 0.5rem;
-    }
-    
-    .projects__presentation{
-        flex-direction: column;
-    }
-    
-    .projects__presentation div{
-        margin-inline: unset;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .projects__presentation div h2{
-        width: auto;
-        text-align: center;
-        font-size: xx-large;
-    }
-    
-    .projects__presentation div p{
-        width: auto;
-        font-size:large;
-        text-align: center;
-        margin: 0.9rem;
-        padding-bottom: 1.2rem;
-        border-bottom: solid;
-        border-color: rgb(187, 187, 187);
-    }
-    
-    .projects__set{
-    
-        margin-inline: 1rem;
-        display: grid;
-        height: 19rem;
-        overflow-x: scroll;
-        grid-template-columns: 100% ;
-        grid-template-rows: min-content min-content min-content min-content;
-        grid-template-areas:"project__group" 
-                            "project__dele" 
-                            "project__movements" 
-                            "projects__expresions";
-    }     
-    .projects__set div{
-        width: 100%;
-    }
-    .projects__set div *{
-        font-size:large;
-    }
-
-    /*Responsive css of testimony section*/
-    .testimony{
-        margin: 0.5rem;
-        padding: 0.5rem;
-    }
-    .testimony__description-title{
-        margin: unset;
-        margin-top: 1rem;
-        padding: unset;
-        text-align: center;
-    }
-    .testimony__description-text{
-        text-align: center;
-    }
-    .testimony__bloques{
-        flex-direction: column;
-        height: 32rem;
-        margin-inline: 0.5rem;
-    }
-    
-    .testimony__tiatula,
-    .testimony__ue_madrid{
-        flex-direction: column;
-        margin: unset;
-    }
-    .testimony__tiatula--imagen,
-    .testimony__ue_madrid--imagen{
-        width: auto;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-    }
-    .testimony__ue_madrid--picture{
-        height: unset;
-        width: 100%;
-    }
-    .testimony__tiatula--picture{
-        width: 100%;
-    }
-    
-    .testimony__tiatula--descriptions,
-    .testimony__ue_madrid--descriptions{
-        width: 310px;
-    }
-    .testimony__tiatula--descriptions div,
-    .testimony__ue_madrid--descriptions div{
-        margin: unset;
-    }
-    .testimony__ue_madrid--descriptions div div,
-    .testimony__tiatula--descriptions div div{
-        margin-top: 0.5rem;
-    }
-    .stars_tiatula img,
-    .stars_ue_madrid img{
-        height: 1.5rem;
-    }
-    .testimony__tiatula--autor p,
-    .testimony__ue_madrid--autor p{
-        margin-inline: unset;
-    }
-    .testimony__tiatula--course p,
-    .testimony__ue_madrid--course p{
-        margin-inline: unset;
-        margin-bottom: 2rem;
-    }
-    
-    /*Responsive css of CTA section*/
-    .cta{
-        padding: 0.5rem;
-    }
-    
-    .cta .cta__description{
-        font-size: 1rem;
-        margin: 0.5rem;
-        text-align: center;
-    }
-    .cta__titulo *{
-        font-size: 2rem;
-    }
-    .button_start{
-        display: flex;
-        margin: 1rem;
-    }
-    
-    .button_start a{
-        font-size: 1.2rem;
-        width: 15rem;
-        padding: 0.5rem;
-    }
-
-
-    /********************************/
-    /*        about_es.html         */
-    /*           - main -           */
-    /********************************/
-    .about__descriptions--presentation,
-    .about__descriptions div {
-        margin-inline: unset;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-    .about__descriptions div div img{
-        width: 90%;
-        margin: auto;
-    }
-    .about__descriptions div h1{
-        font-size: 2rem;
-    }
-    
-    .about__descriptions div div h2{
-        text-align: center;
-        margin: auto;
-        font-size: 1.5rem;
-    }
-    .about__descriptions div div p{
-        text-align: center;
-        font-size: 1rem;
-    }
-    .about__carrer .about__carrer--title{
-        margin-inline: auto;
-        text-align: center;
-    }
-}
-
+// MEDIA QUERIES
+@import "_responsive.scss"

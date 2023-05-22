@@ -1,0 +1,57 @@
+/* *************************** */
+/* style confing css of Footer */
+/* *************************** */
+
+footer {
+    padding: 4rem 1rem;
+    background-color: black;
+    *{
+        text-decoration: none;
+        color: white;
+    }
+    .footer__description{
+        display:flex;
+        padding: 2rem 0.5rem;
+        p{
+            font-size:large;
+        }
+    } 
+    .footer__nav{
+        padding: 1rem 0.5rem;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                display:flex;
+                text-decoration: none; 
+                font-size:2rem;
+                margin-right: 3rem;
+            }
+        }
+    }
+    .footer__last_line{
+        display:flex;
+        align-items: center;
+        padding-top: 5rem;
+        padding-inline: 0.5;
+    }
+}
+
+.footer__soccial{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    div{
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        div{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 2rem;
+            filter: invert(100%);
+        }
+    }
+}
