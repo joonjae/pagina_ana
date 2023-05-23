@@ -17,56 +17,6 @@ body{
     color: #FF5733;
 }
 
-/**********************************/
-/*                                */
-/*            404 error           */
-/*                                */
-/**********************************/
-
-/* ****************************** */
-/* style confing css of 404 error */
-/* ****************************** */
-.error__404{
-    min-height: 100vh;
-    background-image: linear-gradient(125deg,#6a89cc,#b8e994);
-}
-.error__404-container{
-    width:100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #343434;
-}
-.error__404-container h1{
-    font-size: 10rem;
-    margin: 0;
-    font-weight: 900;
-    letter-spacing:20px;
-}
-
-.error__404-container a{
-    text-decoration: none;
-    background: #e55039aa;
-    color:#fff;
-    padding: 12px 24px;
-    display: inline-block;
-    border-radius: 25px;
-    font-size:1.3rem;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-
-.error__404-container a:hover{
-    background: #e55039;
-}
-
-.error__404-container img{
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
 /********************************/
 /*                              */
 /*            Header            */
