@@ -305,37 +305,268 @@
     /*        about_es.html         */
     /*           - main -           */
     /********************************/
-    .about__descriptions--presentation,
-    .about__descriptions div {
-        margin-inline: unset;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+    .about__descriptions {
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 2rem;
+            }
+            div{
+                margin-bottom: 0;
+                img{
+                    margin-inline: auto;
+                    width: 99%;
+                    border-radius: 5%;
+                }
+                h2{
+                    text-align: center;
+                    margin: auto;
+                    font-size: 1.5rem;
+                }
+                p{
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+        .about__descriptions--presentation{
+            margin-bottom: 2rem;
+        }
     }
-    .about__descriptions div div img{
-        width: 90%;
-        margin: auto;
-    }
-    .about__descriptions div h1{
-        font-size: 2rem;
-    }
-    
-    .about__descriptions div div h2{
-        text-align: center;
-        margin: auto;
-        font-size: 1.5rem;
-    }
-    .about__descriptions div div p{
-        text-align: center;
-        font-size: 1rem;
-    }
-    .about__carrer .about__carrer--title{
-        margin-inline: auto;
-        text-align: center;
+    .about__carrer{
+        padding-inline: 0;
+        div{
+            div{
+                width: 100%;
+                margin: .5rem;
+                img{
+                    width: 100%;
+                }
+            } 
+
+        }
+        .about__carrer--title{
+            margin-inline: auto;
+            text-align: center;
+        }
+        .about__carrer--images{
+            div{
+                margin-inline: 0;
+                margin: .5rem;
+                img{
+                    border-radius: 5%;
+                }
+            }
+        }
     }
 
-    
+    /********************************/
+    /*       contacts_es.html       */
+    /*           - main -           */
+    /********************************/
+    .contact{
+        div{
+            flex-direction: column;
+            .contact__company{
+                width: 95%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .contact__form{
+                width: 95%;
+                background-color:rgb(218, 249, 218);
+                margin:auto;
+                margin-top: 1rem;
+                border-top: 2px solid gray;
+                padding-top: 1rem;
+                form{
+                    padding-inline: .5rem;
+                    border-left: unset;
+                    label{
+                        width: 100%;
+                        margin-bottom: 0.4rem;
+                    }
+                    input{
+                        margin-bottom: 1rem;
+                    }
+                    input[type="telefono"],
+                    input[type="mensaje"],
+                    input[type="email"],
+                    input[type="text"]{
+                        height: 1.5rem;
+                    }
+                    textarea{
+                        height: 10rem;
+                    }
+                    input[type="submit"]{
+                        color: white;
+                        width: 100%;
+                        padding: 0.5rem;
+                        font-size: 1.1rem;
+                        margin-left: auto;
+                        margin-top: 1rem;
+                        border-radius: 5px;
+                        background-color: $color-naranja;
+                    }
+                }
+            } 
+        }
+    }
+
+    /********************************/
+    /*       course_es.html       */
+    /*           - main -           */
+    /********************************/
+    .dele{
+        width: 100%;
+        .course__dele{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 5%;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 0.2rem;
+                margin: 0;
+                h2{
+                    text-align: center;
+                    margin: 0;
+                    width: 100%;
+                }
+                p{
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .personalized{
+        margin: auto;
+        margin-top: 2rem;
+        .course__personalized{
+            margin: 0;
+            img{
+                width: 100%;
+                border-radius: 5%;
+            }
+            div{
+                margin: 0;
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        width: 100%;
+                        text-align: center;
+                        margin-inline: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /********************************/
+    /*   special_programs_es.html   */
+    /*           - main -           */
+    /********************************/
+    .special{
+        width: 100%;
+        padding: 0rem;
+        div{
+            margin: 0;
+            h1{
+                font-size: 2.2rem;
+            }
+        }
+        .special__description{
+            font-size: larger;
+            text-align: center;
+            width: 90%;
+        }
+        .course__special{
+            padding: 0rem;
+            img{
+                width: 100%;
+                margin: .5rem;
+                border-radius: 5%;
+            }
+            div{
+                width: 100%;
+                margin: .5rem;
+                padding: 0rem;
+                div{
+                    padding: 0.5rem;
+                    margin: 0rem;
+                    width: 100%;
+                    *{ 
+                        text-align: center;
+                        margin: 0rem;
+                    }
+                    h2{
+                        font-size: x-large;
+                    }
+                    p{
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+
+    /********************************/
+    /*        prices_es.html        */
+    /*           - main -           */
+    /********************************/
+    .prices{
+        margin: 0rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        .prices__title{
+            margin: 0rem;
+            h1{
+                text-align: center;
+                font-size: xx-large;
+                font-weight: bold;
+            }
+        }
+        
+        .prices__descriptions{
+            width: 90%;
+            margin: auto;
+            p{
+                font-size: large;
+                text-align: center;
+            }
+        }
+        .prices__dele{
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 95%;
+            padding: 2rem;
+            background-color: rgb(206, 206, 206);
+            tr td{
+                font-size:medium;
+                height: 40px;
+                padding: .5rem;
+                border-bottom: 1px dotted gray;
+                a{
+                    text-decoration: none; 
+                }
+            }
+        }
+    }
 }
+
+
 
