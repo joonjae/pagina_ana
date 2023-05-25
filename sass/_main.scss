@@ -285,10 +285,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .about__descriptions--presentation{        margin-inline: 15rem;
+    .about__descriptions--presentation{        
+        margin-inline: 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        div img{
+            width: 400px;
+        }
         .about__descriptions--presentation_text p{
             width: auto;
         }
@@ -321,8 +325,15 @@
         }
         
     }
-    .about__descriptions--goal_text p{
-        width: auto;
+    .about__descriptions--goal{
+        div img{
+            width:400px;
+        }
+        .about__descriptions--goal_text{
+            p{
+                width: auto;
+            }
+        } 
     }
 }
 
@@ -343,6 +354,10 @@
         justify-content: space-around;
         div{
             margin: 1rem;
+            img{
+                width: 300px;
+                height: 300px;
+            }
         }
     }
     div div h2{
@@ -480,6 +495,9 @@
         h1{
             font-size: 2.2rem;
         }
+        img{
+            width: 300px;
+        }
     }
     .special__description{
         font-size: larger;
@@ -552,6 +570,9 @@
     flex-wrap: wrap;
     align-items: center;
     padding-inline: .1rem;
+    img{
+        width: 300px;
+    }
     div{
         padding: auto;
         width: 70%;

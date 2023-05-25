@@ -312,14 +312,10 @@
             flex-direction: column;
             h1{
                 font-size: 2rem;
+                text-align: center;
             }
             div{
                 margin-bottom: 0;
-                img{
-                    margin-inline: auto;
-                    width: 99%;
-                    border-radius: 5%;
-                }
                 h2{
                     text-align: center;
                     margin: auto;
@@ -332,8 +328,15 @@
             }
             
         }
+        .about__descriptions--goal,
         .about__descriptions--presentation{
             margin-bottom: 2rem;
+            div img{
+                margin-inline: auto;
+                width: 99%;
+                border-radius: 5%;
+                width: 100%;
+            }
         }
     }
     .about__carrer{
@@ -358,6 +361,7 @@
                 margin: .5rem;
                 img{
                     border-radius: 5%;
+                    width: 100%;
                 }
             }
         }
